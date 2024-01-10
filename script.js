@@ -42,12 +42,59 @@ Utilizadas para interação com o usuário, caixas de pergunta, confirmação.
 
 // alert(`O seu nome é ${nome}`);
 
-const status = confirm(
-  "Deseja realmente deletar este item? Está ação não poderá ser desfeita."
-);
+// const status = confirm(
+//   "Deseja realmente deletar este item? Está ação não poderá ser desfeita."
+// );
 
-if (status) {
-  alert("Item deletado!");
-} else {
-  alert("Ação cancelada!");
-}
+// if (status) {
+//   alert("Item deletado!");
+// } else {
+//   alert("Ação cancelada!");
+// }
+
+/* 
+4 - getElementById(); getElementsByClassName()
+*/
+
+// const div = document.getElementById("container");
+// const title = document.getElementsByClassName("title");
+
+// console.log({ div });
+// console.log({ title });
+
+/* 
+
+5 - getElementByName(); getElementsByTagName();
+
+*/
+
+// const text = document.getElementsByName("text");
+
+// console.log(text[0].textContent);
+
+// const span = document.getElementsByTagName("span");
+
+// console.log(span[0]);
+
+// span[0].innerHTML = "Olá, mundo!";
+
+/*
+
+6 - querySelector(); querySelectorAll();
+
+*/
+
+// const element = document.querySelector(".text");
+// const elements = document.querySelectorAll(".text");
+
+// console.log(elements);
+
+/*
+
+7 - InnerHTML
+
+*/
+
+const element = document.getElementById("text2");
+
+element.innerHTML = "Texto alterado pelo JavaScript!";
